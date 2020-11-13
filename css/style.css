@@ -1,0 +1,515 @@
+/* ここから下に記載していく */
+
+/* ここに書いていきます */
+
+body {
+  color:#222222;
+  font-family:"Open Sans","ヒラギノ角ゴ";
+  font-size: 16px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 1200px;
+  align-items: center;
+}
+
+ .header {
+   width: auto;
+   height: 50px;
+   font-size: 21px;
+   font-weight: bold;
+   display: flex;
+   justify-content: space-around;
+  }
+
+  .header__nav {
+  display: flex;  
+  text-align: justify;
+ }
+
+.header__nav li {
+  margin-left: 40px;
+  margin-top: 20px;
+ }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* mainvisual */
+.mainvisual {
+  position: relative;
+}
+.mainvisual p {
+  position: absolute;
+  font-weight: bold;
+  font-size: 3em;
+  font-family: Quicksand, sans-serif;
+  color: white;
+  top: 0;
+  left: 0;
+}
+
+.mainvisual img {
+  widows: 100px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: bold;
+  padding: 40px;
+  margin: 40px;
+  text-align: center;
+}
+
+.about {
+  text-align: center;
+  line-height: 2;
+}
+
+
+.item {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-bottom: 2em;
+
+  padding-bottom: 0px;
+}
+.item:nth-child(odd) {
+   flex-direction: row-reverse;
+}
+.item-image {
+   width: 50%;
+ 
+  }
+.item-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.item-image1 {margin-top: 80px;}
+.item-text {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+  background: #eee;
+}
+
+.item-text1{
+  margin-top: 80px;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  padding: 3em;
+  background: #eee;
+}
+.recommend {
+  text-align: center;
+  line-height: 2;
+  margin-bottom: 60px;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: bold;
+  padding: 20px;
+  margin: 40px;
+  text-align: left;
+}
+
+.clearfix, .list article {
+  zoom: 1;
+}
+
+.clearfix::after, .list
+article:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.list article img {
+  width: 20%;
+  height: auto;
+  margin: 0;
+  padding: 0 20px;
+  float: left;
+}
+
+.list article h2 {
+  padding-left: 20px;
+}
+.list article p {
+text-align: left;
+padding: 0 20px;
+margin: 0;
+}
+
+.pic_frame {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.pic_frame img1 {
+ width: auto;
+ height: auto;
+ -webkit-transform: scale(1);
+ transform: scale(1);
+ -webkit-transition:  .2 ease-in-out;
+ transition: .2s ease-in-out;
+}
+.pic_frame1:hover img {
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+
+.pic_frame img2 {
+  width: auto;
+  height: auto;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition:  .2 ease-in-out;
+  transition: .2s ease-in-out;
+ }
+ .pic_frame2:hover img {
+   -webkit-transform: scale(1.2);
+   transform: scale(1.2);
+ }
+
+ .pic_frame img3 {
+  width: auto;
+  height: auto;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition:  .2 ease-in-out;
+  transition: .2s ease-in-out;
+ }
+ .pic_frame3:hover img {
+   -webkit-transform: scale(1.2);
+   transform: scale(1.2);
+ }
+
+ .pic_frame {
+  float: inline-end;
+ }
+
+ h3 {
+   text-align: center;
+   line-height: 2;
+   margin-top: 30px;
+   height: 50px;
+ }
+
+  h4 {
+    text-align: center;
+   margin-top: 10px;
+   height: 10px;
+   width: 80%;
+   justify-items: center;
+  }
+
+.checkbox-wrap label{
+  margin-right: 20px;
+  display: inline-block;
+}
+.checkbox-wrap input{
+  display: none;
+}
+.checkbox-wrap input + span{
+  padding-left: 22px;
+  position: relative;
+}
+.checkbox-wrap input + span::before{
+  content: "";
+  background-image: url(../img/check.png);
+  background-size: contain;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 18px;
+}
+.checkbox-wrap input:checked + span{
+  color: #487cff;
+  font-weight: bold;
+}
+.checkbox-wrap input:checked + span::after{
+  content: "";
+  background-image: url(../img//checku-checked.png);
+  background-size: contain;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 18px;
+  height: 18px;
+}
+
+.google-maps {
+  position: relative;
+  padding-bottom: 75%;
+  height: 0;
+  overflow: hidden;
+}
+
+.google-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+
+}
+
+h4 {
+  font-size: 18px;
+  text-align: center;
+  height: 50px;
+  width: 100%;
+}
+
+.access {
+  list-style: none;
+  margin: 50px;
+  margin-left: 160px;
+  padding: 20px;
+  line-height: 2;
+}
+
+.access__nav {
+   list-style: none;
+}
+
+.kaisha {
+  width: 100%;
+}
+.kaisha th,
+.kaisha td {
+  border: 1px solid #ccc;
+  padding: 20px;
+}
+
+.kaisha th {
+  font-weight: bold;
+  background-color: #dedede;
+}
+
+@media screen and (max-width:767px) {
+
+  .kaisha,
+  .kaisha tr,
+  .kaisha td,
+  .kaisha th {display:block;}
+  .kaisha th {width: auto;}
+}
+
+.contact {
+ text-align: center;
+ line-height: 2;
+ margin-bottom: 80px;
+}
+
+
+form.myform input[type="会員"],form.myform
+input[type="checkbox"] {
+  display:none;
+}
+
+form.myform input[type="radio"]+span,
+form.myform input[type="checkbox"]+span {
+  position: relative;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  margin-right: 5px;
+  border: 1px solid #999999;
+  vertical-align: middle;
+  text-align: middle;
+  line-height: 100%;
+  font-size: 80%;
+}
+form.myform input[type="radio"]+spa:after,
+form.myform input[type="checkbox"]+span:after {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  width: 1em;
+  height: 1em;
+  line-height: 100%;
+}
+form.myform
+input[type="checkbox"]:checked+span:after {
+content: "L";
+font-weight: bold;
+-webkit-transform: scale(-1,1)
+rotate(-45deg);
+}
+
+
+.Form {
+  margin-top: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 720px;
+}
+@media screen and (max-width:480px) {
+  .Form {
+    margin-top: 40px;
+  }
+}
+
+.Form-Item {
+  border-top: 1px solid #ddd;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width:480px) {
+ .Form-Item{
+   padding-left: 14px;
+   padding-right: 14px;
+   padding-top: 16px;
+   padding-bottom: 16px;
+   flex-wrap: wrap;
+ } 
+}
+.Form-Item:nth-child(4) {
+  border-bottom: 1px solid #ddd;
+}
+.Form-Item-Label {
+  width: 100%;
+  max-width: 248px;
+  letter-spacing: 0.05em;
+  font-weigh:bold;
+  font-size: 16px;
+}
+@media screen and (max-width: 480px) {
+  .Form-Item-Label {
+    max-width: inherit;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+  }
+}
+.Form-Item-Label.isMsg {
+  margin-top: 8px;
+  margin-bottom: auto;
+}
+@media screen and (max-width: 480px) {
+  .Form-Item-Label.isMsg {
+    margin-top: 0;
+  }
+}
+.Form-Item-Label-Required {
+  border-radius: 6px;
+  margin-right: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 48px;
+  display: inline-block;
+  text-align: center;
+  background: #5bc8ac;
+  color: #fff;
+  font-size: 14px;
+}
+
+@media screen and (max-width: 480px) {
+  .Form-Item-Label-Required {
+    border-radius: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    width: 32px;
+    font-size: 10px;
+  }
+}
+.Form-Item-Input {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-left: 40px;
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 48px;
+  flex: 1;
+  width: 100%;
+  max-width: 410px;
+  background: #eaedf2;
+  font-size: 16px;
+}
+@media screen and (max-width:480px) {
+  .Form-Item-Input {
+    margin-left: 0;
+    margin-top: 18px;
+    height: 40px;
+    flex: inherit;
+    font-size: 15px;
+}
+}
+.Form-Item-Textarea {
+  border: 1px solid #ddd;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-left: 40px;
+  padding-left: 1em;
+  padding-right: 1em;
+  height: 216px;
+  flex: 1;
+  width: 100%;
+  max-width: 410px;
+  background: #eaedf2;
+  font-size: 16px;
+}
+@media screen and (max-width: 480px) {
+  .Form-Item-Textarea {
+    margin-top: 18px;
+    margin-left: 0;
+    height: 200px;
+    flex: inherit;
+    font-size: 15px;
+  }
+}
+.Form-Btn {
+  border-radius: 6px;
+  margin-top: 20px;
+  margin-bottom: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 280px;
+  display: block;
+  letter-spacing: 0.05em;
+  background: #5bc8ac;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+}
+@media screen and (max-width: 480px) {
+  .Form-Btn {
+    margin-top: 20px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    width: 90px;
+    font-size: 16px;
+  }
+}
+
+
+footer {
+  width: auto;
+  height: 50px;
+  margin: auto;
+  padding-top: 30px;
+  text-align: center;
+  background-color: #707070;
+}
